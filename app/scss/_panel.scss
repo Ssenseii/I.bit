@@ -16,40 +16,5 @@
     grid-row: 1/4;
     height: 100%;
     width: 100%;
-}
-
-.decode{
-    grid-column: 2/5;
-}
-
-.rotate{
-    grid-column: 2;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-}
-
-.quiz{
-    position: relative;
-    right: 16rem;
-    border-radius: 25px;
-    width: 100%;
-}
-
-.brightLight{
-    position: relative;
-    right: 10rem;
-    width: 40rem;
-    
-    display: flex;
-    justify-self: center;
-    align-self: center;
-}
-
-.sentience{
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    border-radius: 50%;
-    width: 10rem;
+    min-width: 10rem;
 }
