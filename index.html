@@ -19,7 +19,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>I.bit</title>
     </head>
-    <body>
+    <body class="background">
+
         <!-- Header -->
         
         <header class="header">
@@ -84,7 +85,7 @@
                         <ul class="help__info-guide">
                             <li>Go through the pages to find secret codes to unlock the secret reward! </li>
                             <li>There are 8 codes. One code in each page</li>
-                            <li>Use the actions in the bottom to find the codes, one button will help for each page</li>
+                            <li>Use the actions in the bottom to find the codes.</li>
                             <li>Also enjoy the lore,</li>
                             <li>This is made in less than a week, of course there are problems with it!!!</li>
                             <li>thanks for playing</li>
@@ -110,14 +111,21 @@
         </div>
 
         <div class="buttons">
-            <div class="buttons__element"></div>
-            <div class="buttons__element"></div>
-            <div class="buttons__element"></div>
-            <div class="buttons__element"></div>
-            <div class="buttons__element"></div>
-            <div class="buttons__element"></div>
-            <div class="buttons__element"></div>
-            <div class="buttons__element"></div>
+            <button class="buttons__element">page left</button>
+            <button class="buttons__element">page right</button>
+            <button class="buttons__element">increase brightness</button>
+            <button class="buttons__element">decrease brightness</button>
+            <div class="button__element write">
+                <input class="buttons__element-input" placeholder="Search Here" type="text">
+                <button class="buttons__element-button">Search</button>
+            </div>
+            <div class="button__element write">
+                <input class="buttons__element-input" placeholder="Keyword..." type="text">
+                <button class="buttons__element-button">Decode</button>
+            </div>
+            <button class="buttons__element">inconsistency</button>
+            <button class="buttons__element">convert words to numbers</button>
+            <button class="buttons__element">Highlight all codes</button>
         </div>
     </body>
     <script src="app/js/script.js"></script>
