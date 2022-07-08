@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>I.bit</title>
+        <link rel="stylesheet" href="dist/style.css" />
+    </head>
+    <body>
+        <!-- Computer -->
+        <div class="screen">
+            <!-- The Computer Screen, carousel using Bootstrap  -->
+            <div class="screen__carousel">
+                <div
+                    id="myCarousel"
+                    class="carousel slide"
+                    data-ride="carousel"
+                >
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" daata-target="#myCarousel" class="active"></li>
+                        <li data-slide-to="1" daata-target="#myCarousel"></li>
+                        <li data-slide-to="2" daata-target="#myCarousel"></li>
+                    </ol>
+
+                    <!-- Wrapper for Slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="BG1"></div>
+                        </div>
+                        <div class="item">
+                            <div class="BG2"></div>
+                        </div>
+                        <div class="item"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Control Board -->
+            <div class="screen__text">
+                <div class="screen__text-buttons"></div>
+                <div class="screen__text-input"></div>
+            </div>
+        </div>
+    </body>
+    <script src="app/js/script.js"></script>
+</html>
