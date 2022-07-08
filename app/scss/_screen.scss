@@ -1,34 +1,43 @@
 .screen{
     display: flex;
     flex-direction: column;
-    width: 75%;
-    height: 90vh;
-    border: 5px solid black;
-    background-color: $green;
 
     &__carousel{
+        border: 4px solid #000;
+        border-radius: 10px;
+
         width: 100%;
-        height: 62vh;
-        overflow: hidden;
-        border-bottom: 8px solid black;
+        padding: 4rem;
+
+        font-family: "Monoska";
+
     }
 
-    &__text{
-        border: 4px solid black;
-        width: 100%;
-        height: 36vh;
-        margin-top: 0.2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+}
 
-        &-border{
-            border: 2px solid black;
-            width: 99%;
-            height: 34vh;
+.item{
+
+    &__one{
+        display: flex;
+        flex-direction: column;
+
+        &-title{
+            padding: 0rem 1rem;
+            margin-bottom: 2rem;
+            width: 75%;
+            min-width: 50%;
+        }
+
+        &-article{
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: row;
+            text-align: justify;
+            text-justify: inter-character;
+
+            &-part{
+                padding: 1rem;
+                font-size: 16px;
+            }
         }
     }
 }

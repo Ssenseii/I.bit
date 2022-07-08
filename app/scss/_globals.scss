@@ -11,8 +11,7 @@ html{
     padding: 0;
 }
 
-.main{
-    display: flex;
-    flex-direction: row;
+li{
+    list-style: none;
+    margin-bottom: 1rem;
 }
-

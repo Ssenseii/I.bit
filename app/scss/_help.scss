@@ -1,0 +1,48 @@
+.help{
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+
+    font-family: 'Monoska';
+
+    &__info{
+        border: 3px solid #000;
+        margin-bottom: 2rem;
+
+        padding: 1rem 2rem;
+
+        &-title{
+            text-decoration: underline;
+            text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+            margin-bottom: 2rem;
+
+            font-size: 28px;
+        }
+
+        &-guide{
+            font-size: 14px;
+        }
+    }
+
+    &__reward{
+        border: 3px solid #000;
+        padding: 0rem 2rem;
+
+        &-title{
+            font-size: 20px;
+            margin-bottom: 1rem;
+        }
+
+        &-input{
+            border: 2px solid #000;
+            border-radius: 5px;
+            height: 4rem;
+            width: 20rem;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            margin: 2rem 0rem;
+        }
+    }
+}
