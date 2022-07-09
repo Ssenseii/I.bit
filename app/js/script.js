@@ -26,7 +26,7 @@ function handleForm(event) { event.preventDefault(); }
 form.addEventListener('submit', handleForm);
 
 /// grabbing keywords
-function grabKeyword(){
+function grabKeywordUnknown(){
     var rawKeyword = document.getElementById("codeInput").value;
     let keyword = rawKeyword.toUpperCase();
     var code = "UNKNOWN";
@@ -40,5 +40,55 @@ function grabKeyword(){
         else{
             element.classList.add("Ball");
         }
+}
+function grabKeyword(){
+    var rawKeyword = document.getElementById("codeInput").value;
+    let keyword = rawKeyword.toUpperCase();
+    ///var code =["UNKNOWN", "MUSHROOM", "SHADOW", "TIME", "AWAKEN", "BLAZE", "DUPLICATE", "WHOAMI"];
+
+        switch (keyword){
+            case "UNKNOWN":
+                var element = document.getElementById("unknown");
+                element.classList.add("colorMe");
+                break;
+                
+            case "MUSHROOM":
+                var element = document.getElementById("mushroom");
+                element.classList.add("colorMe");
+                break;
+                
+            case "SHADOW":
+                var element = document.getElementById("shadow");
+                element.classList.add("colorMe");
+                break;
+                
+            case "TIME":
+                var element = document.getElementById("time");
+                element.classList.add("colorMe");
+                break;
+                
+            case "AWAKEN":
+                var element = document.getElementById("awaken");
+                element.classList.add("colorMe");
+                break;
+                
+            case "BLAZE":
+                var element = document.getElementById("blaze");
+                element.classList.add("colorMe");
+                break;
+                
+            case "DUPLICATE":
+                var element = document.getElementById("duplicate");
+                element.classList.add("colorMe");
+                break;
+                
+            case "WHOAMI":
+                var element = document.getElementById("whoami");
+                element.classList.add("colorMe");
+                break;
+                
+        }
+
+        
 
 }
