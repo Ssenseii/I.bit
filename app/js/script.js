@@ -19,8 +19,26 @@ function decreaseBrightness() {
     element.classList.remove("increaseBrightness");
 }
 
+///stop page refresh
+
+var form = document.getElementById("formSubmit");
+function handleForm(event) { event.preventDefault(); }
+form.addEventListener('submit', handleForm);
 
 /// grabbing keywords
 function grabKeyword(){
-    var element = document.getElementById("#smtg")
+    var keyword = document.getElementById("codeInput").value;
+    keyword.style.up
+    code = "UNKNOWN";
+
+
+        if (keyword == code){
+            var element = document.getElementById("yellow");
+            element.classList.add("yellowBall");
+            
+        }
+        else{
+            element.classList.add("Ball");
+        }
+
 }

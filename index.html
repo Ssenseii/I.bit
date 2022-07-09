@@ -120,13 +120,13 @@
                 </div>
                 <div class="help__reward">
                     <h2 class="help__reward-title">Input any code you find, <br> one by one.</h2>
-                    <form class="help__reward-input" action="">
-                        <input class="help__reward-input-text" type="text">
-                        <input class="help__reward-input-btn" type="submit">
+                    <form id="formSubmit" class="help__reward-input" action="" onsubmit=" return grabKeyword()">
+                        <input  id="codeInput" name="codeInput" class="help__reward-input-text" type="text">
+                        <input   class="help__reward-input-btn" type="submit">
                     </form>
                 </div>
                 <div class="help__icons">
-                    <div class="help__icons-colors"></div>
+                    <div id="yellow" class="help__icons-colors"></div>
                     <div class="help__icons-colors"></div>
                     <div class="help__icons-colors"></div>
                     <div class="help__icons-colors"></div>
