@@ -27,9 +27,9 @@ form.addEventListener('submit', handleForm);
 
 /// grabbing keywords
 function grabKeyword(){
-    var keyword = document.getElementById("codeInput").value;
-    keyword.style.up
-    code = "UNKNOWN";
+    var rawKeyword = document.getElementById("codeInput").value;
+    let keyword = rawKeyword.toUpperCase();
+    var code = "UNKNOWN";
 
 
         if (keyword == code){
