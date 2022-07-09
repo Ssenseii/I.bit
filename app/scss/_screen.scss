@@ -1,6 +1,5 @@
 .screen{
     display: flex;
-    background: lightgray;
 
     &__carousel{
         border: 4px solid #000;
@@ -15,6 +14,21 @@
 
 }
 
+.increaseBrightness{
+    animation: brighter 5s linear;
+    color: #000;
+    background-color: #fff;
+    transition: background-color 5.5s ;
+}
+
+.decreaseBrightness{
+    animation: darker 5s linear;
+    color: #fff;
+    background-color: #000;
+    transition: background-color 5.5s ;
+}
+
+
 .item{
 
     &__one{
@@ -26,6 +40,12 @@
             margin-bottom: 2rem;
             width: 75%;
             min-width: 50%;
+
+            &-editor{
+                & > span{
+                    font-size: 11px;
+                }
+            }
             
         }
 
@@ -38,6 +58,7 @@
             &-part{
                 padding: 1rem;
                 font-size: 16px;
+                width: 50%;
             }
         }
     }

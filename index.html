@@ -32,7 +32,7 @@
         <div class="main">
 
             <div class="main__one">
-                <div class="screen">
+                <div id="scrn" class="screen">
 
                     
                     <div class="screen__carousel">
@@ -42,7 +42,7 @@
                             data-ride="carousel"
                         >
                             <!-- Indicators -->
-                            <ol class="carousel-indicators">
+                            <ol class="carousel-indicators" style="visibility: hidden">
                                 <li data-slide-to="0" daata-target="#myCarousel" class="active"></li>
                                 <li data-slide-to="1" daata-target="#myCarousel"></li>
                                 <li data-slide-to="2" daata-target="#myCarousel"></li>
@@ -59,13 +59,25 @@
                                     <div class="item__one">
                                         <div class="item__one-title">
                                             <h1 class="item__one-title-head">
-                                                <b>Woman Found unconscious under Nevada's Fiery Light</b></h1>
-                                            <p class="item__one-title-editor"> Edited by: Simon Reinhardt</p>
+                                                <b>Woman Found Dead under vermont's burning Ash</b></h1>
+                                            <p class="item__one-title-editor"> Edited by: Simon Reinhardt, <span>
+                                                11th April 1995
+                                            </span></p>
                                         </div>
 
                                         <div class="item__one-article">
-                                            <p class="item__one-article-part">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ea quia optio itaque nam molestias autem recusandae sapiente, hic veniam vel. Impedit libero obcaecati dignissimos harum illo, dolorum pariatur? Delectus vero, quidem sint modi omnis consectetur nostrum tempore minus dignissimos!</p>
-                                            <p class="item__one-article-part">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa provident quas magni molestiae voluptates impedit laborum recusandae doloremque enim iusto praesentium, cumque repellat, obcaecati debitis labore voluptatibus quam! A obcaecati quos hic, quod odio soluta minima debitis laudantium pariatur dolor non deleniti iusto et consectetur, earum nostrum magnam ipsam amet. Nobis, soluta accusamus cum aliquam officiis nesciunt! Amet, nesciunt expedita?</p>
+                                            <p class="item__one-article-part">Police identified the body dicovered on a burning property near the deerfield river, is that of the vermont woman reported missing almost four weeks ago. <br>
+                                            Stacy Heine, 28, was last seen by her friends as they were working on a project concerning narcotics deemed revolutionary in terms of lengthening life expectancy.
+                                            <br>
+                                            <br>At the time, Heine left their office in a state her friends describe as 'disturbing'.
+                                            <p class="item__one-article-part">
+                                            The investigation into Stacy heine's death hasn't led to any arrests as of yet.
+                                            <br>
+                                            Police didn't give any indications to who might have slit her throat and burned her body. Though the evidence had been lost in the fire, and no footmarks were found at the scene besides Stacy's.
+                                            <br>
+                                            <br>Who did it remains a mystery. we'll update you once we have new informations.
+                                            <span class="code__one">unkown</span>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -108,7 +120,10 @@
                 </div>
                 <div class="help__reward">
                     <h2 class="help__reward-title">Input any code you find, <br> one by one.</h2>
-                    <input class="help__reward-input" type="text">
+                    <form class="help__reward-input" action="">
+                        <input class="help__reward-input-text" type="text">
+                        <input class="help__reward-input-btn" type="submit">
+                    </form>
                 </div>
                 <div class="help__icons">
                     <div class="help__icons-colors"></div>
@@ -133,8 +148,8 @@
                 <span><button class="buttons__element">page right</button></span>
                 <span class="sr-only">Next</span>                
             </a>
-            <button class="buttons__element">increase brightness</button>
-            <button class="buttons__element">decrease brightness</button>
+            <button onclick="increaseBrightness()" class="buttons__element">increase brightness</button>
+            <button onclick="decreaseBrightness()" class="buttons__element">decrease brightness</button>
             <div class="button__element write">
                 <input class="buttons__element-input" placeholder="Search Here" type="text">
                 <button class="buttons__element-button">Search</button>

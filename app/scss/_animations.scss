@@ -1,0 +1,23 @@
+@keyframes brighter{
+    0%{
+        color: #fff;
+        background-color: #000;
+    }
+
+    100%{
+        color: #000;
+        background-color: #fff;
+    }
+}
+
+@keyframes darker{
+    0%{
+        color: #000;
+        background-color: #fff;
+    }
+
+    100%{
+        color: #fff;
+        background-color: #000;
+    }
+}
