@@ -49,7 +49,10 @@ function convertNumberLetter(){
         span4.textContent = 'mushroom';
         span4.style.textDecoration= "underline";
     } else {
-        window.alert("Unable to decode")
+        if(rawKeyword == 547309){
+            const span2 = document.getElementById("decodeShadow");
+            span2.textContent = 'Shadow';
+        }
     }
 
 }

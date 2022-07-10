@@ -95,5 +95,13 @@
 
     &__three{
         font-family: 'Edu SA Beginner', cursive;
+
+        &-title{
+            margin-bottom: 2rem;
+        }
+
+        &-text{
+            font-size: 18px;
+        }
     }
 }
