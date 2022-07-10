@@ -15,22 +15,22 @@
 }
 
 .increaseBrightness{
-    animation: brighter 5s linear;
-    color: #000;
+    animation: brighter 3s ease-in-out;
     background-color: #fff;
-    transition: background-color 5.5s ;
+    transition: background-color 3.5s ease-in-out;
 }
 
 .decreaseBrightness{
-    animation: darker 5s linear;
-    color: #fff;
+    animation: darker 3s linear;
     background-color: #000;
-    transition: background-color 5.5s ;
+    color: #fff;
+    transition: background-color 3.5s ease-in-out;
 }
 
 
 .item{
 
+    
     &__one{
         display: flex;
         flex-direction: column;
@@ -61,5 +61,39 @@
                 width: 50%;
             }
         }
+    }
+
+
+    &__two{
+        display: flex;
+        flex-direction: column;
+
+        &-title{
+            padding: 0rem 1rem;
+            margin-bottom: 2rem;
+            width: 100%;
+            min-width: 50%;
+        }
+
+        &-article{
+
+            &-image{
+                width: 30%;
+                float: left;
+                margin: 5px;
+
+                border: 1rem solid black;
+                background-color: white;
+            }
+
+            &-text{
+                text-align: justify;
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__three{
+        font-family: 'Edu SA Beginner', cursive;
     }
 }

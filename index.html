@@ -8,6 +8,10 @@
         <!-- Fonts -->
         <link href = "app/scss/fonts/Monoska/stylesheet.css" rel = "stylesheet" type = "text/css" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+
 
         <!-- Styles -->
         <link rel="stylesheet" href="dist/style.css" />
@@ -55,7 +59,7 @@
         
                             <!-- Wrapper for Slides -->
                             <div class="carousel-inner">
-                                <div class="item active">
+                                <div class="item">
                                     <div class="item__one">
                                         <div class="item__one-title">
                                             <h1 class="item__one-title-head">
@@ -82,14 +86,40 @@
                                     </div>
                                 </div>
                             
-                                <div class="item">
+                                <div class="item ">
                                     <div class="item__two">
-                                        <h1>page2</h1>
+                                        <h1 class="item__two-title"><b>New mushroom found in vermont to produce hallucinations!!!</b></h1>
+                                        <div class="item__two-article">
+                                            <div class="square">
+                                                <img class="item__two-article-image" src="app/scss/images/mushroom.png" alt="">
+                                            </div>
+                                            <p class="item__two-article-text">Isohymine (pu, 5-acido-chlorine-N; N-schyzopropine) is the main psychoactive priniciple of this new found hallucinogenic <span id="decodeWord1">84561004</span>.
+                                        <br>After Ingestion, Isohymine is converted into the pharmalogivally active form of its former self "hymine-8". Hymine 8 itself is also present in the <span id="decodeWord2">84561004</span>, but in smaller ammounts. Isohymine and hymine-8 are both indolealkylamines and structrullaty similar to the neurotransmiier seratonin.
+                                        <br>Besides These two components, two further tryptamines - baescomorphis and norbaecystine - could also be present but are thought to be less active than the former two.
+                                        <br><span id="decodeWord3">84561004</span>s with psychoactive properties have long played a role in various native medicine traditions in cultures all around the world.
+                                        <br>There is an ongoing research in the field of genetic engineering aimed towards creation of the enhanced qualities of<span id="decodeWord4">84561004</span>s for such domains as nutritional value enhancement, as well as medical use.
+                                            </p>
+                                            <!-- span.innerHTML = `<span style="background-color: coral">Replacement HTML</span> -->
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="item">
+                                <div class="item active">
                                     <div class="item__three">
-                                        <h1>page3</h1>
+                                        <div class="item__three-title">
+                                            <p>2nd march 1995</p>
+                                            <h1>It still follows me, everywhere!!!</h1>
+                                        </div>
+                                        <div class="item__three-text">
+                                            <p>
+                                                Such a beautiful... I don't know.<br> 
+                                                I'll call it an it, <br>
+                                                from the day it appeared, it has been nothing but joys. I can finally rest and let it do everything for me. I'm willing to even let it work out for me.
+                                                <br>
+                                                It behvaed oddly sometimes, I find it staring at me while I'm sleeping, ominously standing behind the doorframe... analysing me?
+                                                <br>
+                                                I'll try to learn more about it in the upcoming days.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="item"></div>
@@ -154,10 +184,11 @@
                 <input class="buttons__element-input" placeholder="Search Here" type="text">
                 <button class="buttons__element-button">Search</button>
             </div>
-            <div class="button__element write">
-                <input class="buttons__element-input" placeholder="Keyword..." type="text">
-                <button class="buttons__element-button">Decode</button>
-            </div>
+            
+            <form id="formDecode" class="button__element write" action="" onsubmit="return convertNumberLetter()">
+                        <input placeholder="decode.." id="decodeInput" name="decodeInput" class="buttons__element-input" type="text">
+                        <input   class="buttons__element-button" type="submit">
+                    </form>
             <button class="buttons__element">inconsistency</button>
             <button class="buttons__element">convert words to numbers</button>
             <button class="buttons__element">Highlight all codes</button>

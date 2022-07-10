@@ -1,3 +1,14 @@
+///stop page refresh
+
+var form = document.getElementById("formSubmit");
+function handleForm(event) { event.preventDefault(); }
+form.addEventListener('submit', handleForm);
+
+var form = document.getElementById("formDecode");
+function handleForm(event) { event.preventDefault(); }
+form.addEventListener('submit', handleForm);
+
+
 /// auto-slide carousel removed
 
 $('.carousel').carousel({
@@ -19,28 +30,32 @@ function decreaseBrightness() {
     element.classList.remove("increaseBrightness");
 }
 
-///stop page refresh
 
-var form = document.getElementById("formSubmit");
-function handleForm(event) { event.preventDefault(); }
-form.addEventListener('submit', handleForm);
+/// convert letters to numbers
+
+function convertNumberLetter(){
+    var rawKeyword = document.getElementById("decodeInput").value;
+    if (rawKeyword == 84561004){
+        const span1 = document.getElementById('decodeWord1');
+        span1.textContent = 'mushroom';
+        span1.style.textDecoration= "underline";
+        const span2 = document.getElementById('decodeWord2');
+        span2.textContent = 'mushroom';
+        span2.style.textDecoration= "underline";
+        const span3 = document.getElementById('decodeWord3');
+        span3.textContent = 'mushroom';
+        span3.style.textDecoration= "underline";
+        const span4 = document.getElementById('decodeWord4');
+        span4.textContent = 'mushroom';
+        span4.style.textDecoration= "underline";
+    } else {
+        window.alert("Unable to decode")
+    }
+
+}
 
 /// grabbing keywords
-function grabKeywordUnknown(){
-    var rawKeyword = document.getElementById("codeInput").value;
-    let keyword = rawKeyword.toUpperCase();
-    var code = "UNKNOWN";
 
-
-        if (keyword == code){
-            var element = document.getElementById("yellow");
-            element.classList.add("yellowBall");
-            
-        }
-        else{
-            element.classList.add("Ball");
-        }
-}
 function grabKeyword(){
     var rawKeyword = document.getElementById("codeInput").value;
     let keyword = rawKeyword.toUpperCase();
@@ -88,7 +103,5 @@ function grabKeyword(){
                 break;
                 
         }
-
-        
 
 }
