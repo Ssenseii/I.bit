@@ -1,5 +1,7 @@
 .screen{
     display: flex;
+    background-color: #fff;
+    border-radius: 10px;
 
     &__carousel{
         border: 4px solid #000;
@@ -21,7 +23,7 @@
 }
 
 .decreaseBrightness{
-    animation: darker 3s linear;
+    animation: darker 3s ease-in-out;
     background-color: #000;
     color: #fff;
     transition: background-color 3.5s ease-in-out;
@@ -30,6 +32,8 @@
 
 .item{
 
+    
+    height: 65vh;
     
     &__one{
         display: flex;

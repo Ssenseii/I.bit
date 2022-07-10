@@ -11,6 +11,22 @@ html{
     padding: 0;
 }
 
+.background{
+    background: url(images/BG.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    z-index: -1000;
+}
+
+body{
+    border: 4px solid #000;
+    border-top: 0;
+    height: 100vh;
+}
+
 li{
     list-style: none;
     margin-bottom: 1rem;
