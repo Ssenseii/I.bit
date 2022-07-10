@@ -108,4 +108,15 @@
             font-size: 18px;
         }
     }
+
+    &__four{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-static{
+            width: 100%;
+        }
+    }
 }
