@@ -31,8 +31,6 @@
 
 
 .item{
-
-    
     height: 65vh;
     
     &__one{
@@ -111,20 +109,19 @@
 
     &__four{
         width: 100%;
+
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
 
         &-static{
-            transform: scale(2);
             position: relative;
-            top: calc(4rem + 13px);
+            
         }
 
         &-animated{
-            transform: scale(2);
             position: relative;
-            top: calc(4rem + 13px);
         }
     }
 }
