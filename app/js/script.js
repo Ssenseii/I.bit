@@ -57,6 +57,32 @@ function convertNumberLetter(){
 
 }
 
+/// sentience
+
+function sentience(){
+    var stat = document.getElementById("static")
+    var animated = document.getElementById("animated")
+    
+    stat.classList.remove("displayblock");
+    stat.classList.add("displaynone");
+    
+    animated.classList.add("displayblock");
+    animated.classList.remove("displaynone");
+}
+
+function timerSentience(){
+    setTimeout(function(){
+        var stat = document.getElementById("static")
+        var animated = document.getElementById("animated")
+    
+        animated.classList.remove("displayblock");
+        animated.classList.add("displaynone");
+    
+        static.classList.add("displayblock");
+        static.classList.remove("displaynone");
+    }, 17500)
+}
+
 /// grabbing keywords
 
 function grabKeyword(){
