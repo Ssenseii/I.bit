@@ -380,22 +380,24 @@
                 </div>
             </div>
         </div>
+ 
 
         <div class="buttons">
             <a href="#myCarousel" data-slide="prev">
-                <span><button class="buttons__element">page left</button></span>
+                <span><button  class="buttons__element" onclick="playAudioPages()">page left</button></span>
                 <span class="sr-only">previous</span>
             </a>
             <a href="#myCarousel" data-slide="next">
                 <span
-                    ><button class="buttons__element">page right</button></span
+                    ><button  class="buttons__element" onclick="playAudioPages()" >page right</button> 
+                </span
                 >
                 <span class="sr-only">Next</span>
             </a>
-            <button onclick="increaseBrightness()" class="buttons__element">
+            <button onclick="increaseBrightness(), playAudio()" class="buttons__element">
                 increase brightness
             </button>
-            <button onclick="decreaseBrightness()" class="buttons__element">
+            <button onclick="decreaseBrightness(), playAudio()" class="buttons__element">
                 decrease brightness
             </button>
             <div class="button__element write">
@@ -404,7 +406,7 @@
                     placeholder="Search Here"
                     type="text"
                 />
-                <button class="buttons__element-button">Search</button>
+                <button class="buttons__element-button" onclick="playAudio()">Search</button>
             </div>
 
             <form
@@ -421,15 +423,15 @@
                     type="text"
                     autocomplete="off"
                 />
-                <button class="buttons__element-button" type="submit">
+                <button class="buttons__element-button" onclick="playAudio()" type="submit">
                     Decode
                 </button>
             </form>
-            <button class="buttons__element" onclick="sentience(), timerSentience()">
+            <button class="buttons__element" onclick="sentience(), timerSentience(), playAudio()">
                 Give Sentience
             </button>
-            <button class="buttons__element">convert words to numbers</button>
-            <button class="buttons__element">Highlight all codes</button>
+            <button class="buttons__element" onclick="playAudio()">convert words to numbers</button>
+            <button class="buttons__element" onclick="playAudio()">Highlight all codes</button>
         </div>
     </body>
     <script src="app/js/script.js"></script>

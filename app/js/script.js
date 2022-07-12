@@ -140,3 +140,19 @@ function grabKeyword(){
         }
 
 }
+
+
+
+///audios
+
+function playAudio(){
+    
+    const audio = new Audio("https://assets.mixkit.co/sfx/preview/mixkit-single-key-press-in-a-laptop-2541.mp3");
+    audio.play();
+}
+
+
+function playAudioPages(){
+    const audio = new Audio("https://assets.mixkit.co/sfx/preview/mixkit-slide-click-1130.mp3");
+    audio.play();
+}
