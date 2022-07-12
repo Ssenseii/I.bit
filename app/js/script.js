@@ -62,6 +62,8 @@ function convertNumberLetter(){
 function sentience(){
     var stat = document.getElementById("static")
     var animated = document.getElementById("animated")
+
+    
     
     stat.classList.remove("displayblock");
     stat.classList.add("displaynone");
@@ -72,7 +74,7 @@ function sentience(){
 
 function timerSentience(){
     setTimeout(function(){
-        var stat = document.getElementById("static")
+        var static = document.getElementById("static")
         var animated = document.getElementById("animated")
     
         animated.classList.remove("displayblock");
@@ -80,6 +82,10 @@ function timerSentience(){
     
         static.classList.add("displayblock");
         static.classList.remove("displaynone");
+
+
+        animated.src = `${animated.src.replace(/\?.*$/, "")}?x=${Math.random()}`;
+
     }, 17500)
 }
 
