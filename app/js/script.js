@@ -39,15 +39,19 @@ function convertNumberLetter(){
         const span1 = document.getElementById('decodeWord1');
         span1.textContent = 'mushroom';
         span1.style.textDecoration= "underline";
+        span1.style.color = "red";
         const span2 = document.getElementById('decodeWord2');
         span2.textContent = 'mushroom';
+        span2.style.color = "red";
         span2.style.textDecoration= "underline";
         const span3 = document.getElementById('decodeWord3');
         span3.textContent = 'mushroom';
+        span3.style.color = "red";
         span3.style.textDecoration= "underline";
         const span4 = document.getElementById('decodeWord4');
         span4.textContent = 'mushroom';
         span4.style.textDecoration= "underline";
+        span4.style.color = "red";
     } else {
         if(rawKeyword == 547309){
             const span2 = document.getElementById("decodeShadow");
