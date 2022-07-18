@@ -185,6 +185,22 @@
             
             border-bottom-left-radius: 25px;
             border-bottom-right-radius: 25px;
+
+            height: 55vh;
+
+            &-blocked{
+                justify-content: center;
+                align-items: center;
+                margin-top: 20rem;
+            }
+
+            &-unblocked{
+                flex-flow: column nowrap;
+
+                &-incoming{
+                    
+                }
+            }
         }
     }
 

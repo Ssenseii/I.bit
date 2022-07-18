@@ -73,10 +73,10 @@ function unlock(){
         var block = document.getElementById("block");
         var chat = document.getElementById("chat");
 
-        block.classList.remove("displayblock");
+        block.classList.remove("displayflex");
         block.classList.add("displaynone");
 
-        chat.classList.add("displayblock");
+        chat.classList.add("displayflex");
         chat.classList.remove("displaynone");
     }
     else{
