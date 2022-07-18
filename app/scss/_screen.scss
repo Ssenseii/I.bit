@@ -196,9 +196,17 @@
 
             &-unblocked{
                 flex-flow: column nowrap;
+                padding: 2rem;
 
-                &-incoming{
-                    
+                & > p{
+                    margin-bottom: 2rem;
+                }
+
+                &-sent{
+                    position: relative;
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
                 }
             }
         }
