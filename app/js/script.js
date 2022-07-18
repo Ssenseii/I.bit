@@ -4,9 +4,13 @@ var form = document.getElementById("formSubmit");
 function handleForm(event) { event.preventDefault(); }
 form.addEventListener('submit', handleForm);
 
-var form = document.getElementById("formDecode");
+var form1 = document.getElementById("formDecode");
 function handleForm(event) { event.preventDefault(); }
-form.addEventListener('submit', handleForm);
+form1.addEventListener('submit', handleForm);
+
+var form2 = document.getElementById("formUnlock");
+function handleForm(event) { event.preventDefault(); }
+form2.addEventListener('submit', handleForm);
 
 
 /// auto-slide carousel removed
@@ -59,6 +63,25 @@ function convertNumberLetter(){
         }
     }
 
+}
+
+function unlock(){
+    var rawpassword = document.getElementById("unlockInput").value;
+    let password = rawpassword.toUpperCase();
+    if(password == "JEREMY"){
+
+        var block = document.getElementById("block");
+        var chat = document.getElementById("chat");
+
+        block.classList.remove("displayblock");
+        block.classList.add("displaynone");
+
+        chat.classList.add("displayblock");
+        chat.classList.remove("displaynone");
+    }
+    else{
+        window.alert("gay")
+    }
 }
 
 /// sentience
