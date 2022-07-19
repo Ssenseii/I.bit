@@ -312,12 +312,16 @@
                                             </div>
                                             <div class="item__five-header-actions">
                                                 <button class="item__five-header-actions-call">call</button>
-                                                <button class="item__five-header-actions-settings"><img width="50%" src="app/scss/images/settings.png" alt=""></button>
+                                                <button type="button" class="item__five-header-actions-settings"><img width="50%" src="app/scss/images/settings.png" alt=""></button>
+                                                    <div class="item__five-header-actions-settings-content">
+                                                        <p><button type="button" class="item__five-header-actions-settings-content-deleted">Show deleted messages</button></p>
+                                                    </div>
                                             </div>
                                         </div>
                                         <div class="item__five-main">
                                             <div id="block" class="item__five-main-blocked displayflex">
-                                                <p id="blockmessage" >Unblock to read previous conversation.</p>
+                                                <p id="blockmessage" >Unlock Stacy's phone to read the last conversation.</p>
+                                                <p class="item__five-main-blocked-hint">hint: my love</p>
                                             </div>
                                             <!-- actual Chat -->
                                             <div id="chat" class="item__five-main-unblocked displaynone">
@@ -328,6 +332,7 @@
                                                 <p>then talk to me. I don't understand any of this</p>
                                                 <p class="item__five-main-unblocked-sent">I can't...</p>
                                                 <p class="item__five-main-unblocked-sent">I'm sorry</p>
+                                                <p class="item__five-main-unblocked-sent-code" id="decodeAwaken">797KEN</p>
                                             </div>
                                         </div>
                                     </div>

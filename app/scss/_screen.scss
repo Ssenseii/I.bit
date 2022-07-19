@@ -167,14 +167,42 @@
 
                 &-call{
                     border-radius: 50%;
-                    width: 5rem;
+                    min-width: 5rem;
                     height: 5rem;
                     margin-right: 1rem;
+
+                    &:active{
+                        background-color: rgb(141, 0, 0);
+                    }
                 }
                 &-settings{
                     border-radius: 50%;
                     width: 5rem;
                     height: 5rem;
+
+                    &:active{
+                        border-top-right-radius: 0px;
+                        border-bottom-right-radius: 0px;
+                    }
+                    
+                    &-content{
+                        padding:0;
+                        display: none;
+                        height: 5rem;
+
+                        &-deleted{
+                            height: 5rem;
+                            border: 2px solid #000;
+                            border-left: none;
+                            border-top-right-radius: 25px;
+                            border-bottom-right-radius: 25px;
+                            font-size: 12px;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -196,17 +224,23 @@
 
             &-unblocked{
                 flex-flow: column nowrap;
-                padding: 2rem;
+                padding: 2rem 4rem;
 
                 & > p{
-                    margin-bottom: 2rem;
+                    margin-bottom: 3rem;
+                    padding: 1rem;
+                    width: 100%;
                 }
+
 
                 &-sent{
                     position: relative;
                     display: flex;
                     justify-content: flex-end;
-                    width: 100%;
+
+                    &-code{
+                        color: #fff;
+                    }
                 }
             }
         }
@@ -223,4 +257,10 @@
     &__eight{
 
     }
+}
+
+.circleActive{
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    border-right: 0;
 }
