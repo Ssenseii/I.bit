@@ -136,12 +136,12 @@
             justify-content: space-between;
             align-items: center;
 
-            border: 1px solid #000;
+            border: 1px solid #969696;
             border-bottom: none;
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
             
-            background-color: #d3d3d3;
+            background-color: #c4c4c4;
             
             width: 100%;
             padding: 1rem;
@@ -156,7 +156,8 @@
                 }
                 &-name{
                     margin-top: 1rem;
-                    margin-left: 1rem; 
+                    margin-left: 1rem;
+                    color: #000 !important; 
                 }
             }
 
@@ -170,6 +171,7 @@
                     min-width: 5rem;
                     height: 5rem;
                     margin-right: 1rem;
+                    color: black !important;
 
                     &:active{
                         background-color: rgb(141, 0, 0);
@@ -197,6 +199,7 @@
                             border-top-right-radius: 25px;
                             border-bottom-right-radius: 25px;
                             font-size: 12px;
+                            color: #000 !important;
 
                             &:hover{
                                 text-decoration: underline;
@@ -209,7 +212,7 @@
 
         &-main{
             display: block;
-            border: 1px solid #000;
+            border: 1px solid #969696;
             
             border-bottom-left-radius: 25px;
             border-bottom-right-radius: 25px;
@@ -240,6 +243,7 @@
 
                     &-code{
                         color: #fff;
+                        visibility: hidden;
                     }
                 }
             }

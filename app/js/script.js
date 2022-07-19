@@ -186,6 +186,12 @@ function grabKeyword(){
 
 }
 
+///show deleted messages
+
+function showDeletedMessage(){
+    var deletedcode = document.getElementById("decodeAwaken")
+    deletedcode.style.visibility = "visible";
+}
 
 
 ///audios
