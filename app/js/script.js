@@ -83,6 +83,8 @@ function convertNumberLetter(){
 
 }
 
+/// unlock function
+
 function unlock(){
     var rawpassword = document.getElementById("unlockInput").value;
     let password = rawpassword.toUpperCase();
@@ -190,7 +192,12 @@ function grabKeyword(){
 
 function showDeletedMessage(){
     var deletedcode = document.getElementById("decodeAwaken")
-    deletedcode.style.visibility = "visible";
+    if (deletedcode.style.visibility == "hidden"){
+        deletedcode.style.visibility = "visible";
+    }
+    else{
+        deletedcode.style.visibility = "hidden";
+    }
 }
 
 
