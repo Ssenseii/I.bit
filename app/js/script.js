@@ -98,10 +98,18 @@ function unlock(){
 
         chat.classList.add("displayflex");
         chat.classList.remove("displaynone");
+
+        var unlockField = document.getElementById("unlockInput");
+        unlockField.value = '';
+        unlockField.placeholder = "That's Correct !!!";
+
+
     }
     else{
-        window.alert("gay")
-    }
+        var unlockField = document.getElementById("unlockInput");
+        unlockField.value = '';
+        unlockField.placeholder = "try again...";
+        }
 }
 
 /// sentience
@@ -214,3 +222,9 @@ function playAudioPages(){
     const audio = new Audio("https://assets.mixkit.co/sfx/preview/mixkit-slide-click-1130.mp3");
     audio.play();
 }
+
+/// clock function:
+// ///setInterval(function () {
+// unlockField.value = new Date().toLocaleTimeString();
+//         }, 1000);
+
