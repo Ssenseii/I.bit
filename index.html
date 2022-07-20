@@ -384,7 +384,7 @@
                             class="help__reward-input"
                             action=""
                             autocomplete="off"
-                            onsubmit=" return grabKeyword()"
+                            onsubmit="return grabKeyword(), playAudioCodes()"
                         >
                             <input
                                 id="codeInput"
@@ -411,7 +411,7 @@
                 </div>
             </div>
         </div>
- 
+
 
         <div class="buttons">
             <a href="#myCarousel" data-slide="prev">
@@ -463,7 +463,7 @@
                 id="formDecode"
                 class="button__element write"
                 action=""
-                onsubmit="return convertNumberLetter()"
+                onsubmit="return convertNumberLetter(), playAudio()"
             >
                 <input
                     placeholder="decode.."

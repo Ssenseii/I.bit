@@ -78,9 +78,12 @@ function convertNumberLetter(){
         if(rawKeyword == 547309){
             const span2 = document.getElementById("decodeShadow");
             span2.textContent = 'Shadow';
+        } else {
+            var inputfield = document.getElementById("decodeInput")
+            inputfield.value = '';
+            inputfield.placeholder = "encryption unavailable";
         }
-    }
-
+    } 
 }
 
 /// unlock function
@@ -106,9 +109,20 @@ function unlock(){
 
     }
     else{
-        var unlockField = document.getElementById("unlockInput");
-        unlockField.value = '';
-        unlockField.placeholder = "try again...";
+        if (password == "MOON"){
+            var unlockField = document.getElementById("unlockInput");
+            unlockField.value = '';
+            unlockField.placeholder = "not saad's love, you idiot";
+            unlockField.style.width = "25rem";
+        }
+
+        else{
+            var unlockField = document.getElementById("unlockInput");
+            unlockField.value = '';
+            unlockField.placeholder = "try again...";
+            unlockField.style.width = "auto";
+            }
+
         }
 }
 
@@ -220,6 +234,11 @@ function playAudio(){
 
 function playAudioPages(){
     const audio = new Audio("https://assets.mixkit.co/sfx/preview/mixkit-slide-click-1130.mp3");
+    audio.play();
+}
+
+function playAudioCodes(){
+    const audio = new Audio("https://assets.mixkit.co/sfx/preview/mixkit-message-pop-alert-2354.mp3")
     audio.play();
 }
 
