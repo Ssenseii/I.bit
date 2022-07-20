@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Sassoon Infant';
+    src: url('SassoonInfantRg-Bold.eot');
+    src: local('Sassoon Infant Bold'), local('SassoonInfantRg-Bold'),
+        url('SassoonInfantRg-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SassoonInfantRg-Bold.woff2') format('woff2'),
+        url('SassoonInfantRg-Bold.woff') format('woff'),
+        url('SassoonInfantRg-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sassoon Infant';
+    src: url('SassoonInfantMd-Medium.eot');
+    src: local('Sassoon Infant Medium'), local('SassoonInfantMd-Medium'),
+        url('SassoonInfantMd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('SassoonInfantMd-Medium.woff2') format('woff2'),
+        url('SassoonInfantMd-Medium.woff') format('woff'),
+        url('SassoonInfantMd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sassoon Infant Tracker B';
+    src: url('SassoonInfantTkB-Regular.eot');
+    src: local('Sassoon Infant Tracker B'), local('SassoonInfantTkB-Regular'),
+        url('SassoonInfantTkB-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SassoonInfantTkB-Regular.woff2') format('woff2'),
+        url('SassoonInfantTkB-Regular.woff') format('woff'),
+        url('SassoonInfantTkB-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sassoon Infant Line';
+    src: url('SassoonInfantLine-Regular.eot');
+    src: local('Sassoon Infant Line'), local('SassoonInfantLine-Regular'),
+        url('SassoonInfantLine-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SassoonInfantLine-Regular.woff2') format('woff2'),
+        url('SassoonInfantLine-Regular.woff') format('woff'),
+        url('SassoonInfantLine-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sassoon Infant Dotted';
+    src: url('SassoonInfantDt-Regular.eot');
+    src: local('Sassoon Infant Dotted'), local('SassoonInfantDt-Regular'),
+        url('SassoonInfantDt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SassoonInfantDt-Regular.woff2') format('woff2'),
+        url('SassoonInfantDt-Regular.woff') format('woff'),
+        url('SassoonInfantDt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sassoon Infant Dotted B';
+    src: url('SassoonInfantDtB-Regular.eot');
+    src: local('Sassoon Infant Dotted B'), local('SassoonInfantDtB-Regular'),
+        url('SassoonInfantDtB-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SassoonInfantDtB-Regular.woff2') format('woff2'),
+        url('SassoonInfantDtB-Regular.woff') format('woff'),
+        url('SassoonInfantDtB-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sassoon Infant Tracker';
+    src: url('SassoonInfantTk-Regular2.eot');
+    src: local('Sassoon Infant Tracker'), local('SassoonInfantTk-Regular2'),
+        url('SassoonInfantTk-Regular2.eot?#iefix') format('embedded-opentype'),
+        url('SassoonInfantTk-Regular2.woff2') format('woff2'),
+        url('SassoonInfantTk-Regular2.woff') format('woff'),
+        url('SassoonInfantTk-Regular2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sassoon Infant';
+    src: url('SassoonInfantRg-Regular.eot');
+    src: local('Sassoon Infant'), local('SassoonInfantRg-Regular'),
+        url('SassoonInfantRg-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SassoonInfantRg-Regular.woff2') format('woff2'),
+        url('SassoonInfantRg-Regular.woff') format('woff'),
+        url('SassoonInfantRg-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
