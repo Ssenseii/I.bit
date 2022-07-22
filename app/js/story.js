@@ -272,7 +272,7 @@ if (c3.addEventListener("click", function () {
         c3.innerHTML = "Fart";
 
         if (c1.addEventListener("click", function () {
-            story.innerHTML = "That's stacy's decomposing head, green blood."
+            story.innerHTML = "That's stacy's decomposing head, green blood. <br> As you inhale the toxic fumes. You slowly choke and die in the bathroom."
 
             c1.style.display = "none";
             c2.style.display = "none";
@@ -280,7 +280,7 @@ if (c3.addEventListener("click", function () {
         }));
 
         if (c2.addEventListener("click", function () {
-            story.innerHTML = "That's stacy showering. But she isn't the same Stacy, something is off about her."
+            story.innerHTML = "That's stacy showering. But she isn't the same Stacy, something is off about her. She turns, sees you and spits acid in your face. You are dead"
 
             c1.style.display = "none";
             c2.style.display = "none";
@@ -288,7 +288,7 @@ if (c3.addEventListener("click", function () {
         }));
 
         if (c3.addEventListener("click", function () {
-            story.innerHTML = "The entire house clicks their tongue synchronically. You alerted the hive of Stacys";
+            story.innerHTML = "The entire house clicks their tongue synchronically. You alerted the hive of Stacys. You can imagine what happened next";
 
             c1.style.display = "none";
             c2.style.display = "none";
@@ -301,15 +301,14 @@ if (c3.addEventListener("click", function () {
     /// Pantry
 
     if (c2.addEventListener("click", function () {
-        story.innerHTML = "You open the pantry door. The same spider from the computer video is crawling around ";
+        story.innerHTML = "You open the pantry door. The same spider from the computer video is crawling around.";
         
-/// stopped here
-        c1.innerHTML = "Follow the river";
-        c2.innerHTML = "Inspect the grounds around the river";
-        c3.innerHTML = "try crossing the river to the other side";
+        c1.innerHTML = "Stomp on it";
+        c2.innerHTML = "Follow it";
+        c3.innerHTML = "Run from it";
 
         if (c1.addEventListener("click", function () {
-            story.innerHTML = "The river keeps on going, and you walk following it. until you reach a rock in the middle of the stream, with a rope stuck in one of its crevices, it's other end lasso'd to some sort of a metal can. You try to lean in and grab the rope... You die."
+            story.innerHTML = "The spider is too strong. You foot doesn't even touch the ground. <br> The spider spits acid on your foot making you scream in pain. The stacy hive is alerted. Guess who's getting eaten tonight."
 
             c1.style.display = "none";
             c2.style.display = "none";
@@ -317,7 +316,7 @@ if (c3.addEventListener("click", function () {
         }));
 
         if (c2.addEventListener("click", function () {
-            story.innerHTML = "stacy's footmarks, facing the river. <br> There's a deep mark too. <br> Someone jumped from here. <br><br> You imitate the jump and you drown 3 minutes later."
+            story.innerHTML = "The spider seemed hesitant. Unsure of your nature or who you are. <br> You follow the spider through the dark corridors as you see a bunch of stacies gathered in her room. <br> The spider leads you to the kitchen window. opens it and signals you to leave. <br> You understand the spider is on a mission to destory the hive of stacy's occupying his and his owner's home. You join him."
 
             c1.style.display = "none";
             c2.style.display = "none";
@@ -325,7 +324,7 @@ if (c3.addEventListener("click", function () {
         }));
 
         if (c3.addEventListener("click", function () {
-            story.innerHTML = "Have you not learned from the previous two choices? <br> I end up coding your death myself for being an idiot";
+            story.innerHTML = "The spider shoots you in the back of the head with an acid green spit ball. You die instantly.";
 
             c1.style.display = "none";
             c2.style.display = "none";
@@ -335,16 +334,17 @@ if (c3.addEventListener("click", function () {
 
     }));
 
+
     /// Bedroom
     if (c3.addEventListener("click", function () {
-        story.innerHTML = "Ah dear Stacy, She was burned here. black marks all around. <br> She must've went up in flames. which means she must've been covered in a fire instigator like gasoline.";
+        story.innerHTML = "'What the hell is that?' you ask yourself <br> Not one, Not two... But aleast a dozen versions of stacy laying in bed. Watching a sitcom on the bedroom tv. <br>This is surreal to you. <br>Which one is the real one?";
 
-        c1.innerHTML = "Look for a gas tank";
-        c2.innerHTML = "Inspect the ash";
+        c1.innerHTML = "Try talking to them";
+        c2.innerHTML = "Call the cops";
         c3.style.display = "none";
 
         if (c1.addEventListener("click", function () {
-            story.innerHTML = "You keep looking and looking around but you can't find anything. Maybe whoever burned her threw the can in the river."
+            story.innerHTML = "They were suprised. <br>BUT... <br>They always wanted to try human reproduction.<br> You are lucky tonight, but you don't know they'll eat you after..."
 
             c1.style.display = "none";
             c2.style.display = "none";
@@ -352,7 +352,7 @@ if (c3.addEventListener("click", function () {
         }));
 
         if (c2.addEventListener("click", function () {
-            story.innerHTML = "It's odd, you've never seen ash like this before. You can almost make out its faint glow."
+            story.innerHTML = "You are called insane and shot through the phone."
 
             c1.style.display = "none";
             c2.style.display = "none";
