@@ -185,7 +185,9 @@ function grabKeyword(){
         switch (keyword){
             case "UNKNOWN":
                 var element = document.getElementById("unknown");
+                var hint1 = document.getElementById("hint1");
                 element.classList.add("colorMe");
+                hint1.innerHTML = "The killer is unknown, no traces of anyone else being there other than Stacy.";
                 break;
                 
             case "MUSHROOM":
@@ -243,8 +245,14 @@ function showDeletedMessage(){
 /// accessible font
 
 function AccessibleFont(){
-    var fontAccess = document.getElementById("mainAccess");    
-        fontAccess.classList.toggle("fontAccessible")
+    var fontAccess = document.getElementById("mainAccess");  
+    var fontAccess2 = document.getElementById("buttons");
+    var button = document.getElementById("fontAccess");
+    var buttonValue = document.getElementById("fontAccess").value;
+
+        fontAccess.classList.toggle("fontAccessible");
+        fontAccess2.classList.toggle("fontAccessible");
+        buttonValue = "Change to original display Font"
 
 
 }

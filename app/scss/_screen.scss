@@ -328,6 +328,49 @@
                 }
         }
     }
+
+    &__seven{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        &-question{
+            font-size: 24px;
+            margin-bottom: 2rem;
+        }
+
+        &-input{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &-field{
+                width: 20rem;
+                height: 3rem;
+                padding: 0rem 1rem;
+                margin-bottom: 1rem;
+
+                border: 1px solid #969696;
+                border-radius: 10px;
+            }
+
+            &-button{
+
+                width: 10rem;
+                padding: 1rem 0rem;
+                background-color: transparent;
+
+                border: 1px solid #969696;
+                border-radius: 10px;
+
+                margin-bottom: 4rem;
+            }
+        }
+    }
 }
 
 .circleActive{

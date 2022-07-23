@@ -50,7 +50,7 @@
 
         <!-- Main -->
 
-        <div id="mainAccess" class="main fontAccessible">
+        <div id="mainAccess" class="main">
             <div class="main__one">
                 <div id="scrn" class="screen">
                     <div class="screen__carousel">
@@ -424,7 +424,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item active">
+                                <div class="item">
                                     <div class="item__six">
                                         <div class="item__six-text">
                                             <p
@@ -473,7 +473,25 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div class="item"></div>
+                                <div class="item active">
+                                    <div class="item__seven">
+                                        <p class="item__seven-question">who killed stacy?</p>
+                                        <form class="item__seven-input" action="">
+                                            <input class="item__seven-input-field" type="text" >
+                                            <input class="item__seven-input-button" value="Enter" type="submit">
+                                        </form>
+                                        <div class="item__seven-help">
+                                            <p id="hint1" class="item__seven-help-hint">- Hint unlocked after the 1st code submission</p>
+                                            <p id="hint2" class="item__seven-help-hint">- Hint unlocked after the 2nd code submission</p>
+                                            <p id="hint3" class="item__seven-help-hint">- Hint unlocked after the 3rd code submission</p>
+                                            <p id="hint4" class="item__seven-help-hint">- Hint unlocked after the 4th code submission</p>
+                                            <p id="hint5" class="item__seven-help-hint">- Hint unlocked after the 5th code submission</p>
+                                            <p id="hint6" class="item__seven-help-hint">- Hint unlocked after the 6th code submission</p>
+                                            <p id="hint7" class="item__seven-help-hint">- Hint unlocked after the 7th code submission</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -545,7 +563,7 @@
             </div>
         </div>
 
-        <div class="buttons">
+        <div id="buttons" class="buttons">
             <a href="#myCarousel" data-slide="prev">
                 <span
                     ><button
@@ -641,8 +659,8 @@
             >
                 Give Sentience
             </button>
-            <button id="fontAccess" class="buttons__element" onclick=" AccessibleFont(), playAudio()">
-                Change to Accessible Font
+            <button  id="fontAccess" class="buttons__element fontAccessible"  onclick=" AccessibleFont(), playAudio()">
+                Change Font
             </button>
             <button class="buttons__element" onclick="playAudio()">
                 Highlight all codes
