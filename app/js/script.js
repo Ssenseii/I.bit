@@ -12,6 +12,10 @@ var form2 = document.getElementById("formUnlock");
 function handleForm(event) { event.preventDefault(); }
 form2.addEventListener('submit', handleForm);
 
+var form3 = document.getElementById("formI7");
+function handleForm(event) { event.preventDefault(); }
+form3.addEventListener('submit', handleForm);
+
 
 /// auto-slide carousel removed
 
@@ -122,8 +126,6 @@ function unlock(){
         var unlockField = document.getElementById("unlockInput");
         unlockField.value = '';
         unlockField.placeholder = "That's Correct !!!";
-
-
     }
     else{
         if (password == "MOON"){
@@ -142,6 +144,27 @@ function unlock(){
 
         }
 }
+
+/// grabbing form7 input
+
+
+function grabInput() {
+    var codeI7_field = document.getElementById("I7input");
+    var codeI7_raw = document.getElementById("I7input").value;
+    var codeI7 = codeI7_raw.toUpperCase();
+
+
+    if (codeI7 == "STACY") {
+        codeI7_field.value = "";
+        codeI7_field.placeholder = "That's correct!";
+
+        
+    } else {
+        codeI7_field.value = "";
+        codeI7_field.placeholder = "Wrong Person!";
+    }
+}
+
 
 /// sentience
 
@@ -174,6 +197,9 @@ function timerSentience(){
 
     }, 17500)
 }
+
+
+
 
 /// grabbing keywords
 
