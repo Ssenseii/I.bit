@@ -327,26 +327,28 @@ function playAudioCodes(){
 
 /// winning
 
-const c1 = document.getElementById("unknown");
-const c2 = document.getElementById("mushroom");
-const c3 = document.getElementById("shadow");
-const c4 = document.getElementById("time");
-const c5 = document.getElementById("awaken");
-const c6 = document.getElementById("blaze");
-const c7 = document.getElementById("whoami");
-
-if (c1.classlist.contains("colorMe") && c2.classlist.contains("colorMe") && c3.classlist.contains("colorMe") && c4.classlist.contains("colorMe") && c5.classlist.contains("colorMe") && c6.classlist.contains("colorMe") && c7.classlist.contains("colorMe")){
-    window.alert("you win");
-}
-
 var intervalId = window.setInterval(function () {
-    const c1 = document.getElementById("unknown");
-    const c2 = document.getElementById("mushroom");
-    const c3 = document.getElementById("shadow");
-    const c4 = document.getElementById("time");
-    const c5 = document.getElementById("awaken");
-    const c6 = document.getElementById("blaze");
-    const c7 = document.getElementById("whoami");
+    const code1 = document.getElementById("unknown");
+    const code2 = document.getElementById("mushroom");
+    const code3 = document.getElementById("shadow");
+    const code4 = document.getElementById("time");
+    const code5 = document.getElementById("awaken");
+    const code6 = document.getElementById("blaze");
+    const code7 = document.getElementById("whoami");
 
-    
+    if (code1.classList.contains("colorMe")){
+        if (code2.classList.contains("colorMe")) {
+            if (code3.classList.contains("colorMe")) {
+                if (code4.classList.contains("colorMe")) {
+                    if (code5.classList.contains("colorMe")) {
+                        if (code6.classList.contains("colorMe")) {
+                            if (code7.classList.contains("colorMe")) {
+                                window.open("https://www.youtube.com/watch?v=euik1Zrs30w")
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }, 1000);
