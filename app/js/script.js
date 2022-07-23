@@ -152,13 +152,15 @@ function grabInput() {
     var codeI7_field = document.getElementById("I7input");
     var codeI7_raw = document.getElementById("I7input").value;
     var codeI7 = codeI7_raw.toUpperCase();
+    var hints = document.getElementById("hint7")
 
 
     if (codeI7 == "STACY") {
         codeI7_field.value = "";
         codeI7_field.placeholder = "That's correct!";
 
-        
+        hints.innerHTML= "WHOAMI";
+        hints.style.color = "#ff0000";
     } else {
         codeI7_field.value = "";
         codeI7_field.placeholder = "Wrong Person!";
@@ -204,6 +206,7 @@ function timerSentience(){
 /// grabbing keywords
 
 function grabKeyword(){
+    var rawKeyword_field = document.getElementById("codeInput");
     var rawKeyword = document.getElementById("codeInput").value;
     let keyword = rawKeyword.toUpperCase();
     ///var code =["UNKNOWN", "MUSHROOM", "SHADOW", "TIME", "AWAKEN", "BLAZE", "DUPLICATE", "WHOAMI"];
@@ -212,11 +215,13 @@ function grabKeyword(){
             case "UNKNOWN":
                 var element = document.getElementById("unknown");
                 var hint1 = document.getElementById("hint1");
+                rawKeyword_field.value = "";
                 element.classList.add("colorMe");
                 hint1.innerHTML = "The killer is unknown, no traces of anyone else being there other than Stacy.";
                 break;
                 
             case "MUSHROOM":
+                rawKeyword_field.value = "";
                 var element = document.getElementById("mushroom");
                 var hint2 = document.getElementById("hint2");
                 element.classList.add("colorMe");
@@ -224,6 +229,7 @@ function grabKeyword(){
                 break;
                 
             case "SHADOW":
+                rawKeyword_field.value = "";
                 var element = document.getElementById("shadow");
                 var hint3 = document.getElementById("hint3");
                 element.classList.add("colorMe");
@@ -231,6 +237,7 @@ function grabKeyword(){
                 break;
                 
             case "TIME":
+                rawKeyword_field.value = "";
                 var element = document.getElementById("time");
                 hint4 = document.getElementById("hint4");
                 element.classList.add("colorMe");
@@ -239,6 +246,7 @@ function grabKeyword(){
                 break;
                 
             case "AWAKEN":
+                rawKeyword_field.value = "";
                 var element = document.getElementById("awaken");
                 var hint5 = document.getElementById("hint5");
                 element.classList.add("colorMe");
@@ -246,6 +254,7 @@ function grabKeyword(){
                 break;
                 
             case "BLAZE":
+                rawKeyword_field.value = "";
                 var element = document.getElementById("blaze");
                 var hint6 = document.getElementById("hint6");
                 element.classList.add("colorMe");
@@ -254,6 +263,7 @@ function grabKeyword(){
                 
                 
             case "WHOAMI":
+                rawKeyword_field.value = "";
                 var element = document.getElementById("whoami");
                 element.classList.add("colorMe");
                 break;
@@ -315,3 +325,28 @@ function playAudioCodes(){
 //         }, 1000);
 
 
+/// winning
+
+const c1 = document.getElementById("unknown");
+const c2 = document.getElementById("mushroom");
+const c3 = document.getElementById("shadow");
+const c4 = document.getElementById("time");
+const c5 = document.getElementById("awaken");
+const c6 = document.getElementById("blaze");
+const c7 = document.getElementById("whoami");
+
+if (c1.classlist.contains("colorMe") && c2.classlist.contains("colorMe") && c3.classlist.contains("colorMe") && c4.classlist.contains("colorMe") && c5.classlist.contains("colorMe") && c6.classlist.contains("colorMe") && c7.classlist.contains("colorMe")){
+    window.alert("you win");
+}
+
+var intervalId = window.setInterval(function () {
+    const c1 = document.getElementById("unknown");
+    const c2 = document.getElementById("mushroom");
+    const c3 = document.getElementById("shadow");
+    const c4 = document.getElementById("time");
+    const c5 = document.getElementById("awaken");
+    const c6 = document.getElementById("blaze");
+    const c7 = document.getElementById("whoami");
+
+    
+}, 1000);
