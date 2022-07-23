@@ -8,6 +8,7 @@
 
     min-height: 80vh;
 
+    font-family: "Monoska";
 
     &__one{
         border: 1rem solid #000;
@@ -29,4 +30,8 @@
         width: 25%;
     }
 
+}
+
+.fontAccessible{
+    font-family: 'Raleway', sans-serif !important;
 }

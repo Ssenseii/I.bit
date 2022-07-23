@@ -19,6 +19,15 @@ $('.carousel').carousel({
     interval: false,
 });
 
+/// perevent double click;
+
+// $(document).ready(function () {
+//     $("#buttonShowFields").click(function (e) {
+//         e.preventDefault();
+//         $("#InfoAddFields").toggle();
+//     });
+
+// });
 /// refresh page button
 
 function refreshPage() {
@@ -230,6 +239,15 @@ function showDeletedMessage(){
     }
 }
 
+
+/// accessible font
+
+function AccessibleFont(){
+    var fontAccess = document.getElementById("mainAccess");    
+        fontAccess.classList.toggle("fontAccessible")
+
+
+}
 
 ///audios
 

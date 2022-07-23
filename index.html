@@ -29,6 +29,10 @@
             rel="stylesheet"
         />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
         <!-- Styles -->
         <link rel="stylesheet" href="dist/style.css" />
         <link
@@ -39,14 +43,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>I.bit</title>
     </head>
-    <body>
+    <body >
         <!-- Header -->
 
         <header class="header"></header>
 
         <!-- Main -->
 
-        <div class="main">
+        <div id="mainAccess" class="main fontAccessible">
             <div class="main__one">
                 <div id="scrn" class="screen">
                     <div class="screen__carousel">
@@ -470,7 +474,6 @@
                                     </div>
                                 </div>
                                 <div class="item"></div>
-                                <div class="item"></div>
                             </div>
                         </div>
                     </div>
@@ -537,7 +540,6 @@
                         <div id="awaken" class="help__icons-colors"></div>
                         <div id="blaze" class="help__icons-colors"></div>
                         <div id="duplicate" class="help__icons-colors"></div>
-                        <div id="whoami" class="help__icons-colors"></div>
                     </div>
                 </div>
             </div>
@@ -639,8 +641,8 @@
             >
                 Give Sentience
             </button>
-            <button class="buttons__element" onclick="playAudio()">
-                convert words to numbers
+            <button id="fontAccess" class="buttons__element" onclick=" AccessibleFont(), playAudio()">
+                Change to Accessible Font
             </button>
             <button class="buttons__element" onclick="playAudio()">
                 Highlight all codes
