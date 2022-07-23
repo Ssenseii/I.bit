@@ -192,33 +192,40 @@ function grabKeyword(){
                 
             case "MUSHROOM":
                 var element = document.getElementById("mushroom");
+                var hint2 = document.getElementById("hint2");
                 element.classList.add("colorMe");
+                hint2.innerHTML = "Stacy and her team was working on a revolutionary drug that would extend life expectancy. The product was unfinished.";
                 break;
                 
             case "SHADOW":
                 var element = document.getElementById("shadow");
+                var hint3 = document.getElementById("hint3");
                 element.classList.add("colorMe");
+                hint3.innerHTML = "Stacy was fascinated by something or someone. Stacy ate something. Stacy was afraid.";
                 break;
                 
             case "TIME":
                 var element = document.getElementById("time");
+                hint4 = document.getElementById("hint4");
                 element.classList.add("colorMe");
+                hint4.innerHTML = "Stacy seems to like jeremy, Her computer is bugged by somekind of mutated spider";
+                
                 break;
                 
             case "AWAKEN":
                 var element = document.getElementById("awaken");
+                var hint5 = document.getElementById("hint5");
                 element.classList.add("colorMe");
+                hint5.innerHTML = "It's a conversation between Stacy? and someone who knows Stacy very well.";
                 break;
                 
             case "BLAZE":
                 var element = document.getElementById("blaze");
+                var hint6 = document.getElementById("hint6");
                 element.classList.add("colorMe");
+                hint6.innerHTML = "Build the story from the choices";
                 break;
                 
-            case "DUPLICATE":
-                var element = document.getElementById("duplicate");
-                element.classList.add("colorMe");
-                break;
                 
             case "WHOAMI":
                 var element = document.getElementById("whoami");
