@@ -47,3 +47,28 @@ a{
     position: absolute;
 }
 
+.phonemessage{
+    display: none;
+}
+
+
+@media screen and (max-width: 500px){
+    
+    body{
+        border: 1px solid #969696;
+        width: 100%;
+        height: auto;
+    }
+    
+    .phonemessage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 99.5vh;
+
+        font-family: 'monoska';
+        font-size: 12px;
+    }
+}

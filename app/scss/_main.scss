@@ -35,3 +35,9 @@
 .fontAccessible{
     font-family: 'Raleway', sans-serif !important;
 }
+
+@media screen and (max-width: 500px){
+    .main{
+        display: none;
+    }
+}
