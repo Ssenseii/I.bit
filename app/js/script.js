@@ -103,7 +103,7 @@ function convertNumberLetter(){
             var inputfield = document.getElementById("decodeInput")
             inputfield.value = '';
             inputfield.placeholder = "encryption unavailable";
-        }
+        } 
     } 
 }
 
