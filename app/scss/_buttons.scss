@@ -51,18 +51,10 @@
     display: flex;
     flex-direction: column;
 }
-
-@media screen and (max-width: 500px){
+/// phones
+@media screen and (max-width: 1500px){
     .buttons{
         display: none;
     }
 }
-
-@media screen and (max-width: 1500px){
-    .buttons{
-        border: 1px solid red;
-        flex-flow: column nowrap;
-        height: 100vh;
-        width: 25%;
-    }
-}
+/// tablets 

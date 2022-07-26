@@ -52,7 +52,7 @@ a{
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1500px){
     .main{
         display: none;
     }
@@ -78,11 +78,3 @@ a{
     }
 }
 
-@media screen and (max-width: 1500px) and (min-width: 800px){
-    body{
-        display: flex;
-        flex-direction: row;
-        border: 2px solid #000;
-        height: auto;
-    }
-}
